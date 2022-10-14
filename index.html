@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <header class="header">
+          <form id="form" class="form">
+            <label class="item">
+              <span class="name">Поиск по названию</span>
+              <input name="search" class="input-value search" type="search" />
+            </label>
+            <label class="item">
+              <span class="name">Зарплата от</span>
+              <input name="salary" class="input-value number" type="number" />
+            </label>
+            <label class="item">
+              <span class="name">Указана ЗП</span>
+              <input name="isSalary" type="checkbox" />
+            </label>
+            <input class="btn" type="submit" value="Искать" />
+          </form>
+        </header>
+        <section id="list" class="list"></section>
+        <section id="pagination" class="pagination"></section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
